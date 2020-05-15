@@ -59,7 +59,7 @@ void Graph::DFSrecursive(int v, bool visited[])
 
 	list<int>::iterator i;
 
-	for (i = adj[V].begin(); i != adj[V].end(); ++i)
+	for (auto j : adj[V])
 	{
 		if (!visited[*i])
 		{
